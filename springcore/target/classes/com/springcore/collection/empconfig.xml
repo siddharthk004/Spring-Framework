@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean name="emp1" class="com.springcore.collection.Emp">
+		<property name="name" value="Radhe"/>
+		
+		<property name="phones">
+			<list>
+				<value>9850352342</value>
+				<value>3846151356</value>
+				<value>5648942215</value>
+				<value>8677357453</value>
+				<null/>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>delhi</value>
+				<value>ahmednagar</value>
+				<value>mumbai</value>
+				<value>pune</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="siddharth" value="kardile"></entry>
+				<entry key="satyam" value="nalkar"></entry>
+				<entry key="bhushan" value="zade"></entry>
+				<entry key="amruta" value="Dahatonde"></entry>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="name1">Siddhu</prop>
+				<prop key="name2">amss</prop>
+				<prop key="name3">work</prop>
+				<prop key="name4">hello</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
