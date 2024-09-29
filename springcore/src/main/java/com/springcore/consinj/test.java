@@ -9,7 +9,8 @@ public class test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/consinj/CIconfig.xml");
 		person person1 = (person) context.getBean("person");
 		System.out.println(person1);
-		
+		Addition person2 = (Addition) context.getBean("add");
+		person2.dosum();
 	}
-
 }
+ 

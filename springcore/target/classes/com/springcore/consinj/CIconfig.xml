@@ -29,4 +29,9 @@
 		</constructor-arg>
 	</bean>
 	
+	<bean class="com.springcore.consinj.Addition" name="add">
+		<constructor-arg value="3" type="double" index="1"/>
+		<constructor-arg value="4" index="0"/>	
+	</bean>
+	
 </beans>
