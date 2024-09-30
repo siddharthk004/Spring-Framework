@@ -8,9 +8,12 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 
+	<context:annotation-config />
+	-->
 	
 	<bean class="com.springcore.Annotation.annotation" name="ann">
-		<property name="price" value="20" />
+		<property name="Subject" value="Siddharth" />
 	</bean>
-	
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
 </beans>

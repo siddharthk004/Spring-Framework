@@ -1,6 +1,5 @@
 package com.springcore.Annotation;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 

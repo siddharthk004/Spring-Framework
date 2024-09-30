@@ -1,14 +1,17 @@
 package com.springcore.Annotation;
 
-public class annotation {
-	private int price;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-	public int getPrice() {
-		return price;
+public class annotation {
+	private String Subject;
+
+	public String getSubject() {
+		return Subject;
 	}
 
-	public void setPrice(int price) {
-		this.price = price;
+	public void setSubject(String subject) {
+		Subject = subject;
 	}
 
 	public annotation() {
@@ -16,13 +19,25 @@ public class annotation {
 		// TODO Auto-generated constructor stub
 	}
 
-	public annotation(int price) {
+	public annotation(String Subject) {
 		super();
-		this.price = price;
+		this.Subject = Subject;
 	}
 
 	@Override
 	public String toString() {
-		return "annotation [price=" + price + "]";
+		return "annotation [Subject=" + Subject + "]";
+	}
+	
+	@PostConstruct
+	public void Start()
+	{
+		System.out.println("Hello I`m Start");
+	}
+	
+	@PreDestroy
+	public void End()
+	{
+		System.out.println("Bye I`m End");
 	}
 }
