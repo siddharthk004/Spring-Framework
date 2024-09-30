@@ -1,0 +1,39 @@
+package com.springcore.usingbean;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.DisposableBean;
+
+public class usingBean implements InitializingBean , DisposableBean{
+	private double price;
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "usingBean [price=" + price + "]";
+	}
+
+	public usingBean() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Taking Bean : init");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Taking Bean : Destroy");
+		
+	}
+}

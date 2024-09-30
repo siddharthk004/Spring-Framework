@@ -13,6 +13,7 @@ public class lifecyc {
 	}
 
 	public void setPrice(double price) {
+		System.out.println("Setting property prize");
 		this.price = price;
 	}
 
@@ -20,4 +21,14 @@ public class lifecyc {
 	public String toString() {
 		return "lifecyc [price=" + price + "]";
 	}	
+	
+	public void Hey()
+	{
+		System.out.println("Initialization Method Access");
+	}
+	
+	public void Bye()
+	{
+		System.out.println("Destroy Method Access");
+	}
 }

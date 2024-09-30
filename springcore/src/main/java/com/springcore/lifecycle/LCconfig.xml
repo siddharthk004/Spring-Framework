@@ -10,7 +10,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<!-- this is our first Beans --> 
-	<bean class="com.springcore.lifecycle.lifecyc" name="LC1">
+	<bean class="com.springcore.lifecycle.lifecyc" name="LC1" init-method="Hey" destroy-method="Bye">
 		<property name="price" value="10" />
 	</bean>
 </beans>
