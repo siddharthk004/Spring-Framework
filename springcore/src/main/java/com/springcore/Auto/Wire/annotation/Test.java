@@ -9,7 +9,6 @@ public class Test {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/Auto/Wire/annotation/autoconfig.xml");
 		
-		
 		Employee emp = context.getBean("auto",Employee.class);
 		System.out.println(emp);
 	}

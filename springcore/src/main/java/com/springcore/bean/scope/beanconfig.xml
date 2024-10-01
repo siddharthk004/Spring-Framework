@@ -9,17 +9,9 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<context:annotation-config />
+	<!-- this is our first Beans --> 
+	<context:component-scan base-package="com.springcore.bean.scope" />
+		
+	<bean class="com.springcore.bean.scope.Teacher" name="teach"></bean>
 	
-	<bean class="com.springcore.Auto.Wire.annotation.Address" name="temp1"> 
-		<property name="street" value="dev-anand" />
-		<property name="city" value="pune-city" />
-	</bean>
-	
-	<bean class="com.springcore.Auto.Wire.annotation.Address" name="temp2"> 
-		<property name="street" value="prem-anand" />
-		<property name="city" value="pimpri-city" />
-	</bean>
-	 
-	<bean class="com.springcore.Auto.Wire.annotation.Employee" name="auto" />
 </beans>
