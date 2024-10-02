@@ -11,7 +11,21 @@ public class Student {
 	private String studentName;
 	@Value("Pune-City")
 	private String city;
+	@Value("#{3 > 4 ? 10 : 20}")
+	private int n;
 	
+	public Student(String studentName, String city, int n) {
+		super();
+		this.studentName = studentName;
+		this.city = city;
+		this.n = n;
+	}
+	public int getN() {
+		return n;
+	}
+	public void setN(int n) {
+		this.n = n;
+	}
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -23,7 +37,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [studentName=" + studentName + ", city=" + city + "]";
+		return "Student [studentName=" + studentName + ", city=" + city + ", n=" + n + "]";
 	}
 	public String getStudentName() {
 		return studentName;

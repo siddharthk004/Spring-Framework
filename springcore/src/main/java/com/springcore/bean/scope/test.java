@@ -9,9 +9,15 @@ public class test {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/bean/scope/beanconfig.xml");
 		Student student1 = (Student) context.getBean("ob",Student.class);
-//		System.out.println(student);
+		System.out.println(student1);
 		System.out.println(student1.hashCode());
 		Student student2 = (Student) context.getBean("ob",Student.class);
 		System.out.println(student2.hashCode());
+		
+//		Teacher tec1 = (Teacher) context.getBean("teach",Teacher.class);
+//		System.out.println(tec1.hashCode());
+//		Teacher tec2 = (Teacher) context.getBean("teach",Teacher.class);
+//		System.out.println(tec2.hashCode());
 	}
 }
+ 
