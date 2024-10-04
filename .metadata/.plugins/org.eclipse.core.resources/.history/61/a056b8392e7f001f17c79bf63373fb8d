@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           ">
+
+    <!-- List Definition -->
+    <util:list list-class="java.util.Vector" id="mylist">
+        <value>Siddharth</value>
+        <value>Amruta</value>
+        <value>Bhushan</value>
+        <value>Pranali</value>
+    </util:list>
+
+    <!-- Set Definition -->
+    <util:set set-class="java.util.HashSet" id="myset">
+        <value>Siddharth</value>
+        <value>Amruta</value>
+        <value>Bhushan</value>
+        <value>Pranali</value>
+    </util:set>
+
+    <!-- Map Definition -->
+    <util:map map-class="java.util.HashMap" id="mymap">
+        <entry key="java" value="2 months" />
+        <entry key="python" value="1 month" />
+        <entry key="react" value="4 months" />
+        <entry key="angular + ts" value="6 months" />
+    </util:map>
+<!-- 
+    <util:properties id="myproperty">
+        <props>
+            <prop key="name1">Siddharth</prop>
+            <prop key="name2">Bhushan</prop>
+            <prop key="name3">Amruta</prop>
+        </props>
+    </util:properties>
+    -->
+
+    <!-- Bean Definition -->
+    <bean class="com.springcore.standalone.collection.Person" id="person1">
+        <property name="friends1" ref="mylist" />
+        <property name="friends3" ref="mymap" />
+    </bean>
+
+</beans>

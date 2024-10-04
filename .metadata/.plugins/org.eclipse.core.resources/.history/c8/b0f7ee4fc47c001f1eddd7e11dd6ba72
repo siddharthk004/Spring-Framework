@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- this is our first Beans --> 
+	
+	<bean class="com.springcore.student" name="student1">
+		
+		<property name="StudentId" value="1"/>	
+		
+		<!--
+		
+		detailed of the upper StudentId tag
+		 
+		<property name="StudentId">
+			<value>1</value>
+		</property>	
+		
+		-->	
+		
+		<property name="StudentName" value="siddharth" />
+		<property name="StudentAddress" value="sangvi" />
+		
+	</bean>
+	<!-- this is our second Beans --> 
+	
+	<bean class="com.springcore.student" name="student2">
+		
+		<property name="StudentId" value="2"/>		
+		<property name="StudentName" value="amruta" />
+		<property name="StudentAddress" value="chanda" />
+		
+	</bean>
+	<!-- this is our third Beans --> 
+	
+	<bean class="com.springcore.student" name="student3">
+		 
+		<property name="StudentId" value="3"/>		
+		<property name="StudentName" value="atharva" />
+		<property name="StudentAddress" value="pune" />
+		
+	</bean>
+	<!-- this is our fourth Beans --> 
+	
+	<bean class="com.springcore.student" name="student4" p:StudentId="4" p:StudentName="Bhushan" p:StudentAddress="nagpur" />
+	<!-- Dependacy injection of beans in a single line -->
+	
+</beans>

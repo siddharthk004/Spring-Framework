@@ -1,0 +1,28 @@
+package com.springcore.Annotation;
+
+public class annotation {
+	private String Subject;
+
+	public int getPrice() {
+		return Subject;
+	}
+
+	public void setPrice(String Subject) {
+		this.Subject = Subject;
+	}
+
+	public annotation() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public annotation(String Subject) {
+		super();
+		this.Subject = Subject;
+	}
+
+	@Override
+	public String toString() {
+		return "annotation [Subject=" + Subject + "]";
+	}
+}

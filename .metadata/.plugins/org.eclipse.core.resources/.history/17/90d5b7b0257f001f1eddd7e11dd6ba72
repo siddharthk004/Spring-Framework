@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util.xsd">
+	
+	<util:list list-class="java.util.LinkedList" id="mylist">
+		<value>Siddharth</value>
+		<value>Amruta</value>
+		<value>Bhushan</value>
+		<value>Pranali</value>
+	</util:list>
+	
+	<util:set set-class="java.util.Set" id="myset">
+		<value>Siddharth</value>
+		<value>Amruta</value>
+		<value>Bhushan</value>
+		<value>Pranali</value>
+	</util:set>
+	
+	<util:map map-class="java.util.Map" id="mymap">
+		<entry key="java" value="2month" />
+		<entry key="python" value="1month" />
+		<entry key="react" value="4month" />
+		<entry key="angular + ts" value="6month" />
+	</util:map>
+	
+	<util:properties properties-class="java.util.Properties" id="myproperty">
+		<props>
+			<prop key="name1">Siddharth</prop>
+			<prop key="name2">Bhushan</prop>
+			<prop key="name3">Amruta</prop>
+		</props>
+	</util:properties>
+	
+	<bean class="com.springcore.standalone.collection.Person" name="person1">
+		<property name="friends" ref="mylist" />
+		<property name="friends" ref="myset" />
+		<property name="friends" ref="mymap" />
+		<property name="friends" ref="myproperty" />
+	</bean>
+	
+	
+</beans>
