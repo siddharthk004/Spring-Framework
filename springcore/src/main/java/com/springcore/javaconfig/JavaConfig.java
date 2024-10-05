@@ -8,9 +8,15 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages="com.springcore.javaconfig")
 public class JavaConfig {
 	@Bean
+	public DepInj getinjection()
+	{
+		return new DepInj();
+	}
+	
+	@Bean
 	public Student getStudent()
 	{
-		Student student = new Student();
+		Student student = new Student(getinjection());
 		return student;
 	}
 	
