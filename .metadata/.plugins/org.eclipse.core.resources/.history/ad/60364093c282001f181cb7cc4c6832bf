@@ -1,10 +1,13 @@
 package com.springcore.javaconfig;
 
-//import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
 
+@Component("demostudent")
 public class Student {
+	
 	public void study()
 	{
 		System.out.println("Student is Reading a book");
 	}
+	
 }

@@ -1,0 +1,13 @@
+package com.springcore.javaconfig;
+
+import org.springframework.stereotype.Component;
+
+@Component("demostudent")
+public class Student {
+	@Bean
+	public Student getStudent() {
+		Student student = new Student();
+		return student;
+	}
+	
+}
