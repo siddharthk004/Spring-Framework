@@ -1,0 +1,16 @@
+package com.springcore.javaconfig;
+
+//import org.springframework.stereotype.Component;
+
+public class Student {
+	private DepInj inj;
+	public Student(private inj)
+	{
+		super();
+		this.inj = inj;
+	}
+	public void study()
+	{
+		System.out.println("Student is Reading a book");
+	}
+}
