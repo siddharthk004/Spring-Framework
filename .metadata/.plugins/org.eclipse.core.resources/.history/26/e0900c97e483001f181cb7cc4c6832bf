@@ -13,7 +13,7 @@ public class JavaConfig {
 		return new DepInj();
 	}
 	
-	@Bean 
+	@Bean
 	public Student getStudent()
 	{
 		Student student = new Student(getinjection());
