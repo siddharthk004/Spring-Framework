@@ -1,25 +1,43 @@
 package com.spring.jdbc.SpringJdbc;
-
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- * Hello world!
- *
- */
+import com.spring.jdbc.SpringJdbc.dao.studentDao;
+import com.spring.jdbc.SpringJdbc.entities.Student;
+
 public class App 
 {
     public static void main( String[] args )
     {
     	ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/SpringJdbc/config.xml");
-    	JdbcTemplate std =context.getBean("jdbcTemplate",JdbcTemplate.class);
+
+    	studentDao studentDao = context.getBean("studentDao",studentDao.class);
+//    	
+    	Student student = new Student();
     	
-    	String query = "insert into student(stud_id,name,city) values(?,?,?)";
+    	//  insert values  
+//    	student.setStud_id(7);
+//    	student.setName("john");
+//    	student.setCity("London");
+//    	int result = studentDao.insert(student);
+//    	System.out.println("Student Added : "+result);
     	
-    	int result = std.update(query,5,"Rekha","Delhi");
+
+    	//  Update values
+    	student.setStud_id(4);
+    	student.setName("Pranali");
+    	student.setCity("Nashik");
+    	int result = studentDao.change(student);
+    	System.out.println("Student Data Updated: "+result);
     	
-    	System.out.println("Number of Record Inserted : "+result); 
+    	
+
+    	//  insert values	
+//    	JdbcTemplate std =context.getBean("jdbcTemplate",JdbcTemplate.class);
+//    	String query = "insert into student(stud_id,name,city) values(?,?,?)";    	
+//    	int result = std.update(query,5,"Rekha","Delhi");
+//    	System.out.println("Number of Record Inserted : "+result); 
+    
     }
 }

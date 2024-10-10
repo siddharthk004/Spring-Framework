@@ -1,6 +1,6 @@
-package com.spring.jdbc.SpringJdbc;
+package com.spring.jdbc.SpringJdbc.entities;
 
-public class student {
+public class Student {
 	
 	private int stud_id;
 	private String Name;
@@ -28,13 +28,13 @@ public class student {
 	public void setCity(String city) {
 		City = city;
 	}
-	public student(int stud_id, String name, String city) {
+	public Student(int stud_id, String name, String city) {
 		super();
 		this.stud_id = stud_id;
 		Name = name;
 		City = city;
 	}
-	public student() {
+	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
