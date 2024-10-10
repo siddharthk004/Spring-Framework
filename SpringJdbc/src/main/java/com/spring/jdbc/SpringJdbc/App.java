@@ -25,14 +25,24 @@ public class App
     	
 
     	//  Update values
-    	student.setStud_id(4);
-    	student.setName("Pranali");
-    	student.setCity("Nashik");
-    	int result = studentDao.change(student);
-    	System.out.println("Student Data Updated: "+result);
+//    	student.setStud_id(4);
+//    	student.setName("Pranali");
+//    	student.setCity("Nashik");
+//    	int result = studentDao.change(student);
+//    	System.out.println("Student Data Updated: "+result);
     	
     	
-
+    	//  delete Values
+//    	student.setStud_id(7);
+//    	int result = studentDao.delete(student);
+//    	System.out.println(result);
+    	
+    	//  select Values
+		Student result = studentDao.getStudent(5);
+    	System.out.println(result);
+		
+		
+    	
     	//  insert values	
 //    	JdbcTemplate std =context.getBean("jdbcTemplate",JdbcTemplate.class);
 //    	String query = "insert into student(stud_id,name,city) values(?,?,?)";    	
