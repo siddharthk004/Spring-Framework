@@ -16,7 +16,7 @@ public class App
     	ApplicationContext context = new AnnotationConfigApplicationContext(jdbcConfig.class);
 
     	studentDao studentDao = context.getBean("studentDao",studentDao.class);
-//    	
+    	
     	Student student = new Student();
     	
 //    	  insert values  
@@ -25,7 +25,7 @@ public class App
     	student.setCity("London");
     	int results = studentDao.insert(student);
     	System.out.println("Student Added : "+results);
-    	
+    	 
 
     	//  Update values
 //    	student.setStud_id(4);
