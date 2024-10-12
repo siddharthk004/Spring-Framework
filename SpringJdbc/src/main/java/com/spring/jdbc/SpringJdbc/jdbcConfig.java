@@ -13,6 +13,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 @Configuration
 @ComponentScan(basePackages = {"com.spring.jdbc.SpringJdbc.dao"})
 public class jdbcConfig {
+	
 	@Bean
 	public DataSource getDataSource()
 	{
