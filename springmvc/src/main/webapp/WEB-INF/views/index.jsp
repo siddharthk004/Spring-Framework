@@ -10,6 +10,9 @@ pageEncoding="ISO-8859-1" %>
 <body>
 <h2>This is home page</h2>
 <h1>Called by home controller</h1>
-<h1> url /home</h1>
+<%
+    String name = (String) request.getAttribute("name");
+ %>
+ <h1>Name is <%=name%></h1>
 </body>
-</html>
+</html> 
