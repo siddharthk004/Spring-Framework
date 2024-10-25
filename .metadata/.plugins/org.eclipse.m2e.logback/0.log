@@ -9981,3 +9981,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration AuthenticatedUserRe
 2024-10-24 11:12:34,631 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\Eclipse_Workspace\aopconcept\src\main\resources
 2024-10-24 11:12:34,635 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\Eclipse_Workspace\aopconcept\src\test\resources
 2024-10-24 11:12:35,391 [Worker-13: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.operation:productcrudapp:0.0.1-SNAPSHOT @ F:\Eclipse_Workspace\productcrudapp\pom.xml.
+2024-10-24 11:19:58,419 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
