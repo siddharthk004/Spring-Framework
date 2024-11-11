@@ -79,4 +79,20 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="F:\Eclipse_Workspace\springbootdemo2"/>
+			<item value="F:\Eclipse_Workspace\spirngbootdemo1"/>
+			<item value="F:\Eclipse_Workspace\spirngbootproject\spirngbootproject"/>
+			<item value="F:\Eclipse_Workspace\spirngbootproject"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 </section>
